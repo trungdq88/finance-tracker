@@ -1,7 +1,7 @@
 <h1>My Portfolio</h1>
 
 <h3>Search for stock</h3>
-<form action="" method="get">
+<%= form_tag search_stocks_path, method: :get do %>
   <div class="input-group mb-3">
     <%= text_field_tag :stock, params[:stock], autofocus: true,
       class: 'form-control',  'aria-describedby': 'basic-addon2' %>
@@ -12,4 +12,10 @@
       <% end %>
     </div>
   </div>
-</form>
+<% end %>
+
+<div class="well">
+  Name: <%= @stock.name %><br/>
+  Symbol: <%= @stock.ticker %><br/>
+  Last price: <%= @stock.last_price %><br/>
+</div>
