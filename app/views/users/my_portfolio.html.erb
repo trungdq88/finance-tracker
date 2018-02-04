@@ -1,1 +1,15 @@
 <h1>My Portfolio</h1>
+
+<h3>Search for stock</h3>
+<form action="" method="get">
+  <div class="input-group mb-3">
+    <%= text_field_tag :stock, params[:stock], autofocus: true,
+      class: 'form-control',  'aria-describedby': 'basic-addon2' %>
+    <div class="input-group-append">
+      <%= button_tag type: :submit, class: 'btn btn-primary' do %>
+        <i class="fa fa-search"></i>
+        Search
+      <% end %>
+    </div>
+  </div>
+</form>

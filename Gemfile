@@ -32,6 +32,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'devise-bootstrap-views', '~> 1.0.0.alpha1'
 gem 'stock_quote'
+gem "font-awesome-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
