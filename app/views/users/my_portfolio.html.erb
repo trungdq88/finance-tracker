@@ -14,8 +14,10 @@
   </div>
 <% end %>
 
-<div class="well">
-  Name: <%= @stock.name %><br/>
-  Symbol: <%= @stock.ticker %><br/>
-  Last price: <%= @stock.last_price %><br/>
-</div>
+<% if @stock %>
+  <div class="well">
+    Name: <%= @stock.name %><br/>
+    Symbol: <%= @stock.ticker %><br/>
+    Last price: <%= @stock.last_price %><br/>
+  </div>
+<% end %>
