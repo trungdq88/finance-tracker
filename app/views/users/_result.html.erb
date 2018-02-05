@@ -4,5 +4,8 @@
     Name: <%= @stock.name %><br/>
     Symbol: <%= @stock.ticker %><br/>
     Last price: <%= @stock.last_price %><br/>
+    <%= link_to 'Add to my portfolio',
+      user_stocks_path(stock: @stock.ticker),
+      class: 'btn btn-xs btn-success', method: :post %>
   </div>
 <% end %>
